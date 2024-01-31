@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;1,300&family=Roboto:ital,wght@0,100;0,500;1,700&display=swap");
+
+* {
+  /*o asterisco (*) é para selecionar toda a div*/
+  margin: 0;
+  padding: 0;
+  font-family: "Opens Sans", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(120deg, #fdfdfcd8, #0b0a0ada);
+  display: flex; /*para alinhar os elementos um ao lado do outro e no centro*/
+  align-items: center; /*para centralizar*/
+  justify-content: center; /*para centralizar*/
+}
+
+.relogio {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 200px;
+  width: 550px;
+  background-color: transparent;
+  border-radius: 3px;
+  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.5);
+}
+
+.relogio div {
+  height: 170px;
+  width: 150px;
+  display: flex;
+  flex-direction: column; /*além de centralizar coloca um elemento abaixo do outro*/
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background: rgba(6, 0, 0, 0.9);
+  box-shadow: 5px, 5px, 15px rgb(12, 1, 1);
+  border-radius: 7px;
+  letter-spacing: 3px; /*espaçamento entre as letras*/
+}
+
+.relogio span {
+  font-weight: bolder; /*engrossa um pouco a linha da fonte*/
+  font-size: 60px;
+}
+
+.relogio span.tempo {
+  font-size: 10px;
+}
